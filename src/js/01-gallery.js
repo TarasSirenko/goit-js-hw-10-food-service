@@ -3,7 +3,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import { galleryItems } from './gallery-items';
 
 //  create markup ===========================================================
-console.log(galleryItems);
+// console.log(galleryItems);
 const galleryContainerRef = document.querySelector('.gallery');
 
 const createGalleryMarkup = arrPicturesRefs => {
@@ -18,7 +18,7 @@ const createGalleryMarkup = arrPicturesRefs => {
 const galleryItemMarkup = createGalleryMarkup(galleryItems);
 // add markup ======================
 galleryContainerRef.innerHTML = galleryItemMarkup;
-//  and create markup ===========================================================
+// //  and create markup ===========================================================
 
 const options = { captionsData: 'alt', captionDelay: 250 };
 const gallery = new SimpleLightbox('.gallery a', options);
